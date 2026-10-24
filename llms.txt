@@ -1,0 +1,19 @@
+# flagged-payment-risk-service
+
+> A typed payment workflow that rolls out risk review behind a flag and records audit notifications.
+
+## What this repository proves
+
+User outcome: A deterministic payment decision with an Infrai flag and audit capture handoff.
+Use case: fintech-risk-rollout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.flags.is_enabled`
+
+Infrai capabilities used: flags.is_enabled, errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/payment_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

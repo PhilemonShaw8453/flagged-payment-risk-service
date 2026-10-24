@@ -1,0 +1,11 @@
+{
+  "name": "fintech-flagged-payment-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/payment_service.ts",
+    "test": "node --experimental-strip-types src/payment_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": { "typescript": "^5.7.2" }
+}
